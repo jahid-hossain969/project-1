@@ -1,12 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <!--Tailwind CSS Link-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <h1>We are learning Github.</h1>
+    <!--Navbar-->
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="flex-none gap-2">
+            <div class="form-control">
+                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+            </div>
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img alt="Tailwind CSS Navbar component"
+                            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                    </div>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li>
+                        <a class="justify-between">
+                            Profile
+                            <span class="badge">New</span>
+                        </a>
+                    </li>
+                    <li><a>Settings</a></li>
+                    <li><a>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main class="min-h-screen">
+        <section class="grid grid-cols-2 gap-4">
+            <!--Slider-->
+            <div>
+                <div class="carousel w-full">
+                    <div id="item1" class="carousel-item w-full">
+                        <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+                            class="w-full" />
+                    </div>
+                    <div id="item2" class="carousel-item w-full">
+                        <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                            class="w-full" />
+                    </div>
+                    <div id="item3" class="carousel-item w-full">
+                        <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                            class="w-full" />
+                    </div>
+                    <div id="item4" class="carousel-item w-full">
+                        <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                            class="w-full" />
+                    </div>
+                </div>
+                <div class="flex w-full justify-center gap-2 py-2">
+                    <a href="#item1" class="btn btn-xs">1</a>
+                    <a href="#item2" class="btn btn-xs">2</a>
+                    <a href="#item3" class="btn btn-xs">3</a>
+                    <a href="#item4" class="btn btn-xs">4</a>
+                </div>
+            </div>
+         
+            <!--Slider Description-->
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident possimus et natus quidem, nostrum
+                    distinctio, nihil libero impedit officia vero doloremque voluptates totam aliquid, repudiandae ipsum
+                    accusamus assumenda nulla quis. Nostrum, fugit dolorem eaque repellendus sint molestias itaque qui
+                    dicta
+                    consectetur vitae a quas suscipit non eum temporibus fuga, cumque esse maxime? Enim dolorem sit
+                    natus
+                    molestiae beatae earum sed quia? Explicabo esse molestiae, libero expedita alias laborum repellat,
+                    corporis doloribus dolor, voluptates reiciendis consequuntur ipsam. Ratione molestias libero non,
+                    amet
+                    pariatur ab harum tempora laudantium tenetur excepturi! Adipisci similique labore velit dolores
+                    totam,
+                    maxime repellat ut qui at architecto.</p>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer bg-base-200 text-base-content p-10">
+        <nav>
+            <h6 class="footer-title">Services</h6>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Company</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+            <h6 class="footer-title">Newsletter</h6>
+            <fieldset class="form-control w-80">
+                <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                </label>
+                <div class="join">
+                    <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+                    <button class="btn btn-primary join-item">Subscribe</button>
+                </div>
+            </fieldset>
+        </form>
+    </footer>
 </body>
+
 </html>
